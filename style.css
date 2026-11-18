@@ -3,12 +3,12 @@ background-color: rgb(#18191C);
 
 }
 .cabecalho{
-margin-botton:0px;
+margin-botton:2px;
 display: flex;
 justify-content: space-around;
 align-itens: center;
-border: 2px solid gray
-background-image: url(wp921011.jpg);
+border: 4px solid gray
+background-image: ;
 background-size:cover;
-background-position:50% 75%;
+background-position:20%;
 }
