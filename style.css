@@ -1,28 +1,215 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-  background-color: #18191C;
-  color: white; /* Adicionei texto branco para dar leitura no fundo escuro */
+    background-color: #141414;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* CABEÇALHO */
 .cabecalho {
-  margin-bottom: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border: 2px solid gray;
-  background-image: url("wp9212011.jpg");
-  background-size: cover;
-  background-position: 50% 75%;
+    background-color: #080808;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    border-bottom: 3px solid #e50914;
 }
 
-img.cabecalho-logo {
-  max-width: 150px;
-  height: auto;
+.cabecalho-logo {
+    width: 100px;
+    height: auto;
 }
 
-.frase-destaque {
-  font-size: 36px;                  
-  text-align: center;               
-  font-family: Arial, sans-serif;
-  margin: auto;   
+.cabecalho-titulo {
+    font-size: 30px;
+    color: #e50914;
+    text-align: center;
 }
 
+/* TÍTULOS DAS SEÇÕES */
+.titulo-separa,
+.titulo-separa-2 {
+    text-align: center;
+    font-size: 32px;
+    margin: 40px 0 25px;
+    color: #e50914;
+    text-transform: uppercase;
+}
+
+/* ÁREA DOS FILMES E SÉRIES */
+.filmes,
+.series {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px 40px;
+}
+
+/* CARDS DOS FILMES */
+.filme-1,
+.filme-2,
+.filme-3,
+.serie-1,
+.serie-2,
+.serie-3 {
+    background-color: #242424;
+    width: 300px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+.filme-1:hover,
+.filme-2:hover,
+.filme-3:hover,
+.serie-1:hover,
+.serie-2:hover,
+.serie-3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(229, 9, 20, 0.4);
+}
+
+/* TÍTULOS DOS CARDS */
+.filme-1 h2,
+.filme-2 h2,
+.filme-3 h2,
+.serie-1 h4,
+.serie-2 h4,
+.serie-3 h4 {
+    color: #ffffff;
+    font-size: 21px;
+    margin-bottom: 18px;
+    min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* IMAGENS DOS FILMES E SÉRIES */
+.imagem-filme-1,
+.imagem-filme-2,
+.imagem-filme-3,
+.imagem-serie-1,
+.imagem-serie-2,
+.imagem-serie-3 {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.imagem-filme-1:hover,
+.imagem-filme-2:hover,
+.imagem-filme-3:hover,
+.imagem-serie-1:hover,
+.imagem-serie-2:hover,
+.imagem-serie-3:hover {
+    transform: scale(1.03);
+}
+
+/* SINOPSES */
+.sinopse-filme-1,
+.sinopse-filme-2,
+.sinopse-filme-3,
+.sinopse-serie-1,
+.sinopse-serie-2,
+.sinopse-serie-3 {
+    color: #cccccc;
+    font-size: 14px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 18px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #080808;
+    border-top: 3px solid #e50914;
+    margin-top: 50px;
+    padding: 30px 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.rodape p {
+    width: 100%;
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.rodape p:first-child {
+    color: #aaaaaa;
+}
+
+/* LOGOS DOS PATROCINADORES */
+.imagem-logo-netflix,
+.imagem-logo-hbo,
+.imagem-logo-disney {
+    width: 85px;
+    height: 55px;
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.imagem-logo-netflix:hover,
+.imagem-logo-hbo:hover,
+.imagem-logo-disney:hover {
+    transform: scale(1.15);
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 768px) {
+
+    .cabecalho {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .cabecalho-titulo {
+        font-size: 23px;
+    }
+
+    .filmes,
+    .series {
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .filme-1,
+    .filme-2,
+    .filme-3,
+    .serie-1,
+    .serie-2,
+    .serie-3 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .titulo-separa,
+    .titulo-separa-2 {
+        font-size: 26px;
+    }
+
+    .rodape {
+        gap: 15px;
+    }
+}
