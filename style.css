@@ -19,5 +19,6 @@ img.cabecalho-logo {
 .cabecalho-titulo.frase-destaque {
   font-size: 36px;                  
   text-align: center;               
-  font-family: Arial, sans-serif;   
+  font-family: Arial, sans-serif;
+  margin: auto;   
 }
