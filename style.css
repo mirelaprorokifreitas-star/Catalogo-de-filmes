@@ -1,24 +1,28 @@
-body{
-background-color: rgb(#18191C);
+body {
+  background-color: #18191C;
+  color: white; /* Adicionei texto branco para dar leitura no fundo escuro */
+}
 
+.cabecalho {
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid gray;
+  background-image: url("wp9212011.jpg");
+  background-size: cover;
+  background-position: 50% 75%;
 }
-.cabecalho{
-margin-botton:0px;
-display: flex;
-justify-content: space-between;
-align-itens: center;
-border: 2px solid gray
-background-image: url(wp9212011,jpg);
-background-size:cover;
-background-position:50% 75%;
-}
+
 img.cabecalho-logo {
   max-width: 150px;
   height: auto;
 }
-.cabecalho-titulo.frase-destaque {
+
+.frase-destaque {
   font-size: 36px;                  
   text-align: center;               
   font-family: Arial, sans-serif;
   margin: auto;   
 }
+
