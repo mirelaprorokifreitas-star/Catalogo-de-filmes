@@ -5,7 +5,7 @@ background-color: rgb(#18191C);
 .cabecalho{
 margin-botton:0px;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-itens: center;
 border: 2px solid gray
 background-image: url(wp9212011,jpg);
